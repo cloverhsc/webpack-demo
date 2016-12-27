@@ -5,15 +5,25 @@
     "main": "index.js",
     "scripts":
     {
+        "start": "webpack-dev-server --env start",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack"
+        "build": "webpack --env build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies":
     {
+        "style-loader": "^0.13.1",
+        "webpack": "^2.2.0-rc.2",
+        "webpack-dev-server": "^2.2.0-rc.0",
+        "webpack-merge": "^2.0.0",
+        "webpack-validator": "^2.3.0"
+    },
+    "dependencies":
+    {
+        "css-loader": "^0.26.1",
         "html-webpack-plugin": "^2.24.1",
-        "webpack": "^2.2.0-rc.2"
+        "react": "^15.4.1"
     }
 }
